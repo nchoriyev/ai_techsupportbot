@@ -1,0 +1,25 @@
+# Secrets — hech qachon gitga kiritilmaydi
+.env
+*.env.local
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# SQLite ma'lumotlar bazasi (serverda alohida yaratiladi)
+support.db
+*.db-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp

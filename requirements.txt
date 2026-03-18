@@ -1,0 +1,6 @@
+# Asaxiy Tech Support Telegram Bot — dependencies
+# Python 3.10+ recommended. O'rnatish: pip install -r requirements.txt
+
+python-telegram-bot==21.7
+python-dotenv==1.0.1
+openai==1.55.3
