@@ -37,7 +37,15 @@ def main() -> None:
     app = Application.builder().token(config.BOT_TOKEN).build()
     setup_handlers(app)
     logger.info("Bot started. Polling...")
-    app.run_polling(allowed_updates=["message", "callback_query"])
+    app.run_polling(
+        allowed_updates=[
+            "message",
+            "callback_query",
+            "message_reaction",
+            "message_reaction_count",
+        ],
+        drop_pending_updates=True,
+    )
 
 
 if __name__ == "__main__":

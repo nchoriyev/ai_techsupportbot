@@ -6,11 +6,6 @@ Uses Azure OpenAI and chat history (source/messages.json) to:
 - Suggest solution from admin (Saidjamol Qosimxonov) responses.
 """
 
-from ai.chat_history import load_chat_history, get_relevant_examples
-from ai.support_ai import SupportAI
+from ai.support_ai import SupportAI, get_support_ai
 
-__all__ = [
-    "load_chat_history",
-    "get_relevant_examples",
-    "SupportAI",
-]
+__all__ = ["SupportAI", "get_support_ai"]
